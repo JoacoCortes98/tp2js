@@ -5,7 +5,7 @@ let j = 0
 
 while(j <= largoFrase){
     if(frase[j] === 'a' || frase[j] === 'e' || frase[j] === 'i' || frase[j] === 'o' || frase[j] === 'u'){
-        console.log('uraaaaaa', frase[j])
+        console.log(frase[j])
         document.write('Esto es una vocal: ' + frase[j] + '<br>');
     }
     j++;
