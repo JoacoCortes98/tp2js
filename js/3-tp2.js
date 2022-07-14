@@ -1,13 +1,20 @@
-let frase = prompt("Ingrese varias frases");
-let frase1 = "precione CANCELAR";
 
-if (confirm("precione CANCELAR")) {
-  document.write('Debes precionas el botón "CANCELAR" aceptar');
-} else {
-  for (i = 0; i < frase.length; i++) {
-    document.write(frase[i]);
-    if (i < frase.length - 1) {
-      document.write("-");
-    }
+let string = "";
+let count = 0;
+do {
+  let frase = prompt("Ingrese una frase");
+
+  // while (!frase) {
+  //   alert("Por favor ingrese una frase");
+  //   frase = prompt("Ingrese una frase");
+  // }
+
+  if (count > 0) {
+    string = string + "-" + frase;
+  } else {
+    string = frase;
   }
-}
+  count++;
+  continuar = confirm("Desea seguir?");
+} while (continuar);
+document.write(string);
