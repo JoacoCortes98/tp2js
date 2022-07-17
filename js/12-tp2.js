@@ -1,1 +1,1 @@
-document.write(Math.round(Math.random()* 100));
+document.write(Math.round(Math.random()* 99));
