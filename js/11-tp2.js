@@ -22,8 +22,6 @@ if(mayor === numero2){
     nombreMayor = nombre2
 }
 
-
-
 document.write('El mayor es ' + nombreMayor.toUpperCase(nombreMayor) + ' y tiene ' + mayor);
 
 
